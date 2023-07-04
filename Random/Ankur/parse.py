@@ -80,12 +80,12 @@ async def bing(query):
 
 def parse(text, source=Sources.OpenAI):
     global query
-    query = query % text
+    modified_query = query % text
 
     if source == Sources.OpenAI:
-        answer = openai(query)
+        answer = openai(modified_query)
     elif source == Sources.Bing:
-        answer = asyncio.run(bing(query))
+        answer = asyncio.run(bing(modified_query))
     else:
         answer = ""
 
@@ -129,7 +129,7 @@ def parse(text, source=Sources.OpenAI):
         print(
             f"{source} was unable to provide a proper response to the following query:"
         )
-        print("".join("\t" + line for line in query.splitlines(True)))
+        print("".join("\t" + line for line in modified_query.splitlines(True)))
         print("Response:")
         print("".join("\t" + line for line in answer.splitlines(True)))
         print("JSON Content:")
