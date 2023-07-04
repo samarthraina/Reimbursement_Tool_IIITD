@@ -1,0 +1,22 @@
+{
+    "uids": {
+        "Invoice No.": "FAGTRA2300002410"
+    },
+    "total": 788.0,
+    "tax": {
+        "gst": 86.9
+    },
+    "name": "Gunar Sindhwani",
+    "currency": "INR",
+    "date": "06-12-2022",
+    "seller_details": {
+        "name": "WISEUFE WELLNESS INDIA PRIVATE LIMITED",
+        "address": "263-5, Model Town, HISAR ~ 125001.",
+        "contact": null,
+        "tax_number": {
+            "gst_number": "O6AADCW2OSOCIZN"
+        },
+        "pan_number": "AADCW2O9OC"
+    },
+    "summary": null
+}

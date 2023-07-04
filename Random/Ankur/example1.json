@@ -1,0 +1,23 @@
+{
+    "uids": {
+        "Invoice No.": "IN-6399",
+        "Order Number": "408-1337373-4493913"
+    },
+    "total": 275.0,
+    "tax": {
+        "gst": 13.1
+    },
+    "name": "Gunar Sindhwani",
+    "currency": "INR",
+    "date": "24-05-2023",
+    "seller_details": {
+        "name": "A2Z Deals",
+        "address": "Netaji Apartments,, Plot no.- 50, Shivalya Road, Chattarpur Village NEW DELHI, DELHI, 110074",
+        "contact": null,
+        "tax_number": {
+            "gst_number": "07BFZPG256201ZJ"
+        },
+        "pan_number": "BFZPG25620"
+    },
+    "summary": "Customized Photo & Song Spotify Plaque"
+}

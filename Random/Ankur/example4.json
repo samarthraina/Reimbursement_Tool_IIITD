@@ -1,0 +1,23 @@
+{
+    "uids": {
+        "Invoice No.": "DEL20130400254964",
+        "Order ID": "OD30418030310"
+    },
+    "total": 370.0,
+    "tax": {
+        "vat": 17.62
+    },
+    "name": "Himanshu Chauhan",
+    "currency": "INR",
+    "date": "18-04-2013",
+    "seller_details": {
+        "name": "WS Retail Services Pvt. Lid.",
+        "address": "Warehouse Address: Khasra No. 435, Road No.# 04, Lal Dora Ext. Mahipalpur, Delhi, Delhi, India - 110037",
+        "contact": null,
+        "tax_number": {
+            "vat_number": "07810387105"
+        },
+        "pan_number": null
+    },
+    "summary": null
+}

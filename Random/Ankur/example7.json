@@ -1,0 +1,20 @@
+{
+    "uids": {
+        "Invoice No.": null
+    },
+    "total": 130.0,
+    "tax": null,
+    "name": null,
+    "currency": null,
+    "date": null,
+    "seller_details": {
+        "name": "ETT CANTEEN CONTRACTORS",
+        "address": "301A, UP BLOCK, PTTANPURA, NEN DELHI-L10054",
+        "contact": null,
+        "tax_number": {
+            "gst_number": "D7AINPPZL ZAK ZH"
+        },
+        "pan_number": null
+    },
+    "summary": null
+}

@@ -1,0 +1,18 @@
+{
+    "uids": {
+        "Invoice No.": "137154028373801"
+    },
+    "total": 164.0,
+    "tax": null,
+    "name": null,
+    "currency": "INR",
+    "date": null,
+    "seller_details": {
+        "name": "Instamart",
+        "address": "S G.B. Pant Engineering Rd, Delhi Okhla Industrial Estate Phas...",
+        "contact": null,
+        "tax_number": null,
+        "pan_number": null
+    },
+    "summary": "2x Origami White Plates, 1x Freebie Cock Platinum Gulal"
+}

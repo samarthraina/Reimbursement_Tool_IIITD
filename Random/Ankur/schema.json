@@ -1,0 +1,134 @@
+{
+    "type": "object",
+    "title": "Information extracted from a bill/receipt",
+    "properties": {
+        "uids": {
+            "title": "Key-value pairs of uniquely identifying numbers (UIDs) like order number, bill number, invoice number, payment ID, etc.",
+            "type": "object",
+            "required": [
+                "Invoice No."
+            ],
+            "additionalProperties": {
+                "type": "string"
+            }
+        },
+        "total": {
+            "title": "Total amount or price",
+            "type": "number"
+        },
+        "tax": {
+            "title": "The total tax amount",
+            "type": "object",
+            "oneOf": [
+                {
+                    "type": "object",
+                    "required": "gst",
+                    "properties": {
+                        "gst": {
+                            "title": "The total GST tax amount (IGST + CGST + SGST + etc) as a single number",
+                            "type": "number"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "required": "vat",
+                    "properties": {
+                        "vat": {
+                            "title": "The total VAT present in the invoice",
+                            "type": "number"
+                        }
+                    }
+                }
+            ]
+        },
+        "name": {
+            "title": "Name of the person/entity that the invoice item was charged or delivered to",
+            "type": "string"
+        },
+        "currency": {
+            "title": "The ISO 4217 code for the currency in which the prices in the invoice are (inferred from the symbol, addresses, etc)",
+            "type": "string"
+        },
+        "date": {
+            "title": "The date the invoice was issued in dd-mm-yyyy format",
+            "type": "string"
+        },
+        "seller_details": {
+            "title": "Information about the seller",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "address": {
+                    "type": "string"
+                },
+                "contact": {
+                    "type": "string"
+                },
+                "tax_number": {
+                    "title": "Tax information",
+                    "type": "object",
+                    "oneOf": [
+                        {
+                            "type": "object",
+                            "required": "gst_number",
+                            "properties": {
+                                "gst_number": {
+                                    "title": "The alphanumeric GSTIN/GST number code",
+                                    "type": "string",
+                                    "minLength": 15
+                                }
+                            }
+                        },
+                        {
+                            "type": "object",
+                            "required": "vat_number",
+                            "properties": {
+                                "vat_number": {
+                                    "title": "The VAT/TIN number present in older invoices",
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        {
+                            "type": "object",
+                            "required": "ui_number",
+                            "properties": {
+                                "ui_number": {
+                                    "title": "The tax UIN issued to foreign entities",
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "pan_number": {
+                    "title": "The 10-character alphanumeric PAN code",
+                    "type": "string",
+                    "minLength": 15,
+                    "maxLength": 15
+                }
+            },
+            "required": [
+                "pan_number",
+                "tax_number"
+            ]
+        },
+        "summary": {
+            "title": "5-6 words short summary of purchased good(s)",
+            "type": "string"
+        }
+    },
+    "required": [
+        "uids",
+        "total",
+        "tax",
+        "name",
+        "currency",
+        "date",
+        "seller_details",
+        "summary"
+    ]
+}

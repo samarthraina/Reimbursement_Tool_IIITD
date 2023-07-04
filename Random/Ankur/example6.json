@@ -1,0 +1,22 @@
+{
+    "uids": {
+        "Invoice No.": "DEL5-21033"
+    },
+    "total": 999.0,
+    "tax": {
+        "gst": 152.38
+    },
+    "name": "Praveen Bohra",
+    "currency": "INR",
+    "date": "30-05-2023",
+    "seller_details": {
+        "name": "Spigen India Pvt. Lid.",
+        "address": "Rect/Killa Nos. 38//8/2 min, 192//22/1,196//2/1/1, 37//15/1, 15/2,, Adjacent to Starex School, Village - Binola, National Highway -8, Tehsil - Manesar Gurgaon, Haryana, 122413",
+        "contact": null,
+        "tax_number": {
+            "gst_number": "06ABACS5056L1Z5"
+        },
+        "pan_number": "ABACS5056L"
+    },
+    "summary": "Spigen Liquid Air Back Cover Case for iPhone 12 Mini"
+}
